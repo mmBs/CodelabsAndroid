@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- What's the difference between Inference and Autoconnect?
+
+The Inference engine creates constraints among all elements in a layout whereas Autoconnect
+creates constraints among neighboring elements.
+
+The goal of auto connect is to create constraints to layout the widget being manipulated i.e other
+widgets won't be constrained to the one you're moving, but the one you're moving will be constrained
+ o other widgets. This is an important distinction because it means auto connect
+ will not modify your current constraints.-->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_inference"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="80dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="80dp"
+    >
+
+  <ImageView
+      android:id="@+id/header"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="16dp"
+      android:contentDescription="@string/dummy"
+      android:scaleType="centerCrop"
+      android:src="@drawable/singapore"
+      app:layout_constraintBottom_creator="1"
+      app:layout_constraintBottom_toBottomOf="@+id/favorite"
+      app:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_creator="1"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_creator="1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_editor_absoluteX="0dp"
+      app:layout_editor_absoluteY="0dp"
+      tools:layout_constraintBottom_creator="1"
+      tools:layout_constraintLeft_creator="1"
+      tools:layout_constraintRight_creator="1"
+      tools:layout_constraintTop_creator="1"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintVertical_bias="0.0"
+      />
+
+  <ImageView
+      android:id="@+id/favorite"
+      android:layout_width="36dp"
+      android:layout_height="36dp"
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="@drawable/info_background"
+      android:contentDescription="@string/dummy"
+      android:padding="5dp"
+      android:src="@drawable/ic_star"
+      app:layout_constraintBottom_creator="0"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_creator="1"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_creator="1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.18"
+      app:layout_editor_absoluteX="359dp"
+      app:layout_editor_absoluteY="104dp"
+      android:layout_marginRight="16dp"
+      />
+
+  <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:elevation="19dp"
+      android:text="@string/singapore"
+      android:textSize="24sp"
+      app:layout_editor_absoluteX="16dp"
+      app:layout_editor_absoluteY="160dp"
+      tools:ignore="MissingConstraints"
+      tools:layout_constraintTop_creator="1"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="160dp"
+      tools:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:labelFor="@+id/cameraEdit"
+      android:text="@string/camera"
+      app:layout_editor_absoluteX="16dp"
+      app:layout_editor_absoluteY="208dp"
+      android:layout_marginStart="16dp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/cameraEdit"
+      tools:layout_constraintBaseline_creator="1"
+      tools:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:labelFor="@+id/settingsEdit"
+      android:text="@string/settings"
+      app:layout_editor_absoluteX="16dp"
+      app:layout_editor_absoluteY="256dp"
+      tools:layout_constraintTop_creator="1"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      tools:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/settingsEdit"
+      />
+
+  <EditText
+      android:id="@+id/cameraEdit"
+      android:layout_width="214dp"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="@string/camera_value"
+      app:layout_editor_absoluteX="80dp"
+      app:layout_editor_absoluteY="195dp"
+      tools:layout_constraintTop_creator="1"
+      tools:layout_constraintRight_creator="1"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginTop="7dp"
+      app:layout_constraintTop_toBottomOf="@+id/subtitle"
+      tools:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+  <EditText
+      android:id="@+id/settingsEdit"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="@string/camera_settings"
+      app:layout_editor_absoluteX="80dp"
+      app:layout_editor_absoluteY="248dp"
+      tools:layout_constraintTop_creator="1"
+      tools:layout_constraintRight_creator="1"
+      app:layout_constraintRight_toRightOf="@+id/cameraEdit"
+      android:layout_marginTop="10dp"
+      app:layout_constraintTop_toBottomOf="@+id/cameraEdit"
+      tools:layout_constraintLeft_creator="1"
+      app:layout_constraintLeft_toLeftOf="@+id/cameraEdit"
+      />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="11dp"
+      android:layout_marginEnd="19dp"
+      android:text="@string/upload"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_editor_absoluteX="304dp"
+      app:layout_editor_absoluteY="543dp"
+      tools:layout_constraintBottom_creator="1"
+      tools:layout_constraintRight_creator="1"
+      />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="11dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/discard"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@+id/button"
+      app:layout_editor_absoluteX="200dp"
+      app:layout_editor_absoluteY="543dp"
+      tools:layout_constraintBottom_creator="1"
+      tools:layout_constraintRight_creator="1"
+      />
+  <TextView
+      android:layout_margin="16dp"
+      android:id="@+id/textView4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="TextView"
+      tools:text="@string/singapore_description"
+      android:layout_marginTop="16dp"
+      app:layout_constraintTop_toBottomOf="@+id/settingsEdit"
+      android:layout_marginRight="16dp"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginLeft="8dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+
+</android.support.constraint.ConstraintLayout>
