@@ -1,8 +1,10 @@
 # CodelabsAndroid
 
-This repository contains already done and checked Codelabs projects.  
-[Here](https://codelabs.developers.google.com/) you can find official Codelabs website.
+This repository contains already done and checked Codelabs & Google Samples projects.  
+[Here](https://codelabs.developers.google.com/) you can find official Codelabs website.  
+[Here](https://github.com/googlesamples) is the link to Google Samples.
 
 List of projects:
 
 - [x] [Using ConstraintLayout to design your views](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html?index=..%2F..%2Findex#0)
+- [x] [Constraint Layout Samples](https://github.com/googlesamples/android-ConstraintLayoutExamples)
