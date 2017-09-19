@@ -10,3 +10,4 @@ List of projects:
 - [x] [Constraint Layout Samples](https://github.com/googlesamples/android-ConstraintLayoutExamples)
 - [x] [Android Things Weather Station](https://codelabs.developers.google.com/codelabs/androidthings-weatherstation/index.html)
 - [x] [Android Things Peripheral I/O](https://codelabs.developers.google.com/codelabs/androidthings-peripherals/index.html)
+- [x] [Android Testing](https://codelabs.developers.google.com/codelabs/android-testing/#0)
