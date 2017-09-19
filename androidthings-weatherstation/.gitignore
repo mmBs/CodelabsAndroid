@@ -1,0 +1,6 @@
+*.iml
+gen
+local.properties
+.idea
+.DS_Store
+
