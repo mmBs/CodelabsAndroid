@@ -11,3 +11,4 @@ List of projects:
 - [x] [Android Things Weather Station](https://codelabs.developers.google.com/codelabs/androidthings-weatherstation/index.html)
 - [x] [Android Things Peripheral I/O](https://codelabs.developers.google.com/codelabs/androidthings-peripherals/index.html)
 - [x] [Android Testing](https://codelabs.developers.google.com/codelabs/android-testing/#0)
+- [x] [Android lifecycle-aware components](https://codelabs.developers.google.com/codelabs/android-lifecycles/index.html)
