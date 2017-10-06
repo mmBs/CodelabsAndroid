@@ -52,5 +52,4 @@ ext {
     rulesVersion = "0.5"
     espressoVersion = "2.2.2"
     archLifecycleVersion = "1.0.0-beta1"
-    archRoomVersion = "1.0.0-beta1"
 }
